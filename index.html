@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Good Food</title>
+
+    <!-- Fonts Awesome -->
+    <script
+      src="https://kit.fontawesome.com/51416ae4aa.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="" class="logo"><span>G</span>GOOD FOOD</a>
+
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="">How it Works</a></li>
+          <li><a href="">Library</a></li>
+          <li><a href="">Pricing</a></li>
+        </ul>
+      </nav>
+      <!-- Hambuger menu icon -->
+      <div class="menu-icon">
+        <div class="icon"></div>
+        <div class="icon"></div>
+        <div class="icon"></div>
+      </div>
+    </header>
+    <nav class="nav-mobile">
+      <ul>
+        <li><a href="">How it Works</a></li>
+        <li><a href="">Library</a></li>
+        <li><a href="">Pricing</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="right-image">
+        <img src="images/cooking.jpg" alt="woman-cooking" />
+      </div>
+      <div>
+        <div class="cupcakes">
+          <img src="images/cupcakes.jpg" alt="cupcake" />
+          <div class="cupcakes-desc">
+            <h4>Strawberry Cupcakes</h4>
+            <p>Payment received</p>
+          </div>
+          <p class="cupcakes-price">$6</p>
+        </div>
+        <div class="heading">
+          <h1>Help You to Grow Your Food Business</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            eligendi aliquid cupiditate sint. Non deserunt facere velit quo iste
+            consectetur dolorem?
+          </p>
+          <div class="cta">
+            <div class="contact">
+              <p class="your-email">Your Email address</p>
+              <p class="email">samantha@gmail.com</p>
+            </div>
+            <div>
+              <button class="btn">Get started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="left-image">
+        <div class="delicious">
+          <p>Very Delicious</p>
+        </div>
+        <img src="images/child.jpg" alt="child-eat-cupcake" />
+      </div>
+    </main>
+
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const navMobile = document.querySelector(".nav-mobile");
+      menuIcon.addEventListener("click", () => {
+        navMobile.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
