@@ -1,0 +1,119 @@
+@media screen and (min-width: 769px) {
+  header {
+    justify-content: start;
+    padding: 2em 3em;
+  }
+  .nav-desktop {
+    display: inline-block;
+    margin-left: 4em;
+  }
+
+  .nav-desktop ul {
+    display: flex;
+  }
+
+  .nav-desktop li {
+    padding: 0 1em;
+  }
+
+  .nav-mobile,
+  .menu-icon {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-image {
+    order: 1;
+    max-width: 30%;
+  }
+  .right-image {
+    order: 3;
+    max-width: 30%;
+  }
+  .middle-container {
+    order: 2;
+    max-width: 40%;
+  }
+
+  /* Right */
+
+  .right-image {
+    z-index: -99;
+    position: relative;
+  }
+
+  .right-image img {
+    border-radius: 100px;
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    margin: -8em 3em 0 0;
+  }
+
+  .half-circle {
+    display: inline-block;
+  }
+
+  .right-image .half-circle {
+    margin-left: 88%;
+  }
+
+  /* Middle */
+
+  .cupcakes {
+    padding: 0.5em;
+    width: 250px;
+    margin: 1em 0 2.5em 25em;
+    border-radius: 15px;
+  }
+
+  .heading h1 {
+    font-size: 2.8rem;
+    width: 70%;
+    margin: auto;
+    font-weight: 600;
+  }
+
+  .heading p {
+    width: 75%;
+    margin: 1.5em auto 0;
+  }
+
+  .cta {
+    margin: 2em 0 1em -12em;
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    z-index: 1 !important;
+  }
+
+  .dotted-square {
+    display: block;
+    width: 200px;
+    opacity: 0.5;
+    position: relative;
+    z-index: -1 !important;
+    margin: -10% 0 0 80%;
+  }
+
+  /* Left Image */
+
+  .left-image img {
+    position: relative;
+    z-index: -1 !important;
+    width: 250px;
+    height: 400px;
+    border-radius: 150px;
+    margin: 0 4em;
+  }
+
+  .delicious {
+    background: rgb(187, 126, 12);
+    margin: 4em 0 -6em 15em;
+    text-align: center;
+    z-index: 99;
+  }
+}
